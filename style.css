@@ -215,6 +215,7 @@ span {
   display: flex;
   gap: 30px;
   justify-content: center;
+  overflow: scroll;
 }
 
 .gallery_container img {
