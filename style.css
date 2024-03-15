@@ -218,6 +218,14 @@ span {
   overflow: scroll;
 }
 
+.gallery_container::-webkit-scrollbar {
+  display: none; 
+}
+
+.gallery_container {
+  scrollbar-color: transparent transparent; 
+}
+
 .gallery_container img {
   height: 580px;
 }
