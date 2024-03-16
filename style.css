@@ -70,6 +70,10 @@ span {
   background-color: #080808;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* <!-- ______________Hero Section___________________ --> */
 
 .home {
@@ -219,11 +223,11 @@ span {
 }
 
 .gallery_container::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .gallery_container {
-  scrollbar-color: transparent transparent; 
+  scrollbar-color: transparent transparent;
 }
 
 .gallery_container img {
@@ -353,6 +357,7 @@ span {
 .guide_left {
   padding-left: 80px;
 }
+
 .guide_left p {
   color: #30af5b;
 }
@@ -617,4 +622,276 @@ footer {
   padding: 60px 0px;
   text-align: center;
   color: gray;
+}
+
+.footer_logo{
+  margin: 0px 0px 40px 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    height: auto;
+  }
+
+  .home_container {
+    flex-direction: column;
+    background-image: url(./images/hero.png);
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .left_heading h1 {
+    font-size: 4rem;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-left: 40px;
+  }
+
+  .menu,
+  .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 40px;
+    font-size: 27px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .guide_container {
+    flex-direction: column;
+  }
+
+  .guide_left,
+  .guide_right {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .guide_content {
+    width: 95%;
+  }
+
+  .guide_right {
+    justify-content: left;
+  }
+
+  .guide_left h1 {
+    font-size: 3rem;
+  }
+
+  .guide_content p {
+    margin-top: 30px;
+  }
+
+  .features {
+    height: auto;
+  }
+
+  .feature_left {
+    display: none;
+  }
+
+  .feature_right {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 80px;
+  }
+
+  .feature_right h1 {
+    font-size: 3rem;
+  }
+
+  .feature_card {
+    min-width: 100%;
+  }
+
+  .calendar {
+    margin: 20px;
+  }
+
+  .feature_card h2 {
+    font-size: 1.5rem;
+  }
+
+  .get_left {
+    margin-left: 30px;
+    justify-content: start;
+  }
+
+  .get_content h1 {
+    font-size: 3rem;
+  }
+
+  .get_btn {
+    flex-direction: column;
+  }
+
+  .get_btn button {
+    padding: 15px;
+    width: 130%;
+  }
+
+  .gallery{
+    height: auto;
+    margin-bottom: 70px;
+  }
+
+  .rectangle{
+    position: static;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .person{
+    bottom: 35%;
+  }
+
+  .rectangle h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home_btn {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .home_btn button {
+    width: 100%;
+  }
+
+  .left_content {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ratings {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .left_heading h1 {
+    font-size: 3.2rem;
+    line-height: 70px;
+  }
+
+  .right_container {
+    width: 100%;
+  }
+
+  .square {
+    top: 35px;
+    left: 45px;
+  }
+
+  .guide_left h1 {
+    font-size: 2.5rem;
+    line-height: 55px;
+  }
+
+  .guide_left p {
+    font-size: 0.9rem;
+  }
+
+  .calendar {
+    height: 39vh;
+    margin: 0;
+  }
+
+  .calendar_box {
+    left: 10%;
+    top: 3%;
+  }
+
+  .feature_card {
+    width: 200px;
+  }
+
+  .feature_right h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature_right {
+    padding: 15px;
+  }
+
+  .get {
+    height: auto;
+  }
+
+  .get_container {
+    flex-direction: column;
+  }
+
+  .get_left,
+  .get_right {
+    width: 100%;
+  }
+
+  .get_btn button {
+    width: 100%;
+  }
+
+  .get_content h1 {
+    font-size: 2.5rem;
+  }
+
+  .get_right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .get_right img {
+    width: 80%;
+  }
+
+  .footer_container {
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-left: 25px;
+  }
+
+  .footer_logo {
+    margin: 0px 0px 40px 40px;
+  }
+
+  .line {
+    margin-bottom: 10px;
+  }
+
+  .line h3 {
+    font-size: 1.2rem;
+  }
+
+  .line p {
+    font-size: 0.9rem;
+  }
+
+  .rectangle{
+    height: 250px;
+  }
+
+  .rectangle h1{
+    font-size: 1.5rem;
+  }
+
+  .rectangle p{
+    font-size: 1rem;
+  }
 }
